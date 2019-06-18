@@ -22,11 +22,11 @@ class ticTacToe:
 		Player 1: 0
 		Player 2: X
 
-			{self.board[1] or ' '}|{self.board[2] or ' '}|{self.board[3] or ' '}
+			{self.board[1] or '1'}|{self.board[2] or '2'}|{self.board[3] or '3'}
 			-----
-			{self.board[4] or ' '}|{self.board[5] or ' '}|{self.board[6] or ' '}
+			{self.board[4] or '4'}|{self.board[5] or '5'}|{self.board[6] or '6'}
 			-----
-			{self.board[7] or ' '}|{self.board[8] or ' '}|{self.board[9] or ' '}
+			{self.board[7] or '7'}|{self.board[8] or '8'}|{self.board[9] or '9'}
 			""")
 
 	def move(self):
