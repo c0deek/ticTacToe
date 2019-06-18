@@ -30,7 +30,7 @@ class ticTacToe:
 			""")
 
 	def move(self):
-		self.choice = int(input("What's your move?"))
+		self.choice = int(input(f"What's your move [{self.player}]? "))
 		if(not self.board[self.choice]):
 			self.board[self.choice] = self.player
 		else:
@@ -56,8 +56,11 @@ class ticTacToe:
 			return False
 
 	def checkWinner(self):
-		if(self.winner()):
-			print(f"{self.players[self.player]} won")
+		if('' not in self.board.values() and not self.winner()):
+			print("No one wins !! ¯\\_(ツ)_/¯ \n")
+			return True
+		elif(self.winner()):
+			print(f"{self.players[self.player]} won ＼(＾O＾)／ \n")
 			return True
 		else:
 			return False
